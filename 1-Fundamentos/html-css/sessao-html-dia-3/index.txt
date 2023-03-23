@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio web</title>
+    <style>
+    h1 {
+    color: palevioletred;
+    font-size: 2em;
+    }
+    h3 {
+        color:black;
+        font: size 100px;;
+    }
+    body {
+        background-color: blanchedalmond;
+        font-size: 20px;
+    }
+    img {
+    border-radius: 50%;
+}
+
+
+    </style>
+</head>
+<body>
+   <h1><b>Olá....</b></h1>
+   
+   <table>
+    <tr>
+      <td><img  width="500" height="500" src='Fer.jpeg'/></td>
+      
+   
+   <td><p><b>Nome:</b>Fernanda Petrachim</p>
+   <p><b>Idade:</b>29 anos</p>
+   <p><b>Nacionalidade:</b>Jundiaí</p>
+   
+   </td>
+</tr>
+</table>
+   <p><b>Sobre mim:</b></p>
+   <p>Sou formada em enfermagem a oito anos, com passar do tempo percebi que estava atuando em uma área que não estava me deixando feliz, 
+   então resolvi mudar de área. Com muitas pesquisas, buscas, conversas com amigos, me interessei pele desenvolvimento Web.
+   Com indicação de uma amiga conheci a Trybe, hoje sou estudannte da Trybe e me orgulho desta decisão.
+    Gosto de conversar, sair, amo conhecer novos lugares e adoro fazer isto em família.</p>
+
+   
+   <h1>Habilidades:</h1>
+   <p>Organização</p>
+   <p>Disciplina</p>
+   <p>Comunicação</p>
+   <p>Criatividade</p>
+   <p>Empatia</p>
+   <h1>Hobbies:</h1>
+   <p>Assitir séries</p>
+   <p>Assistir Filmes</p>
+   <p>Viagens</p>
+   <h3>"Você nunca sabe a força que tem, até que sua única alternativa é ser forte." </h3> 
+
+</ul>
+<a href="#Fer.jpge">Minha foto</a>
+
+<P><B>Se quiser uma nova amizade, me adiciona no facebook.</B></P>
+<p><a href="https://www.facebook.com/fernanda.petrachim" target="_blank">Facebook</a></p>
+</body>
+</html>
