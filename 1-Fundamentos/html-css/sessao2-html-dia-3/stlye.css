@@ -4,6 +4,7 @@
     width: 200px;
     position: absolute;
     left; 100px;
+    top:100px;
 
   }
   
@@ -14,7 +15,14 @@
     left:150 px;
   }
 
-  
+/* Posicione o balão para que se torne uma fala de Bowser. */
+
+.baloon {
+    position: absolute;
+    top: 250px;
+    left: 400px;
+}
+
   /* Posicione o balão para que se torne uma fala de Bowser. */
   .speach {
       <font-size:25px;
