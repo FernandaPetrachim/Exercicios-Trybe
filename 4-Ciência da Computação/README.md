@@ -1,1 +1,1 @@
-Ciência da Computação
+Ciencia-da-computacao
