@@ -1,6 +1,8 @@
-h1 {
-  color: palevioletred;
+
+.Meunome {
+  color: rgb(243, 15, 91);
   font-size: 2em;
+  text-align: center;
 }
 h3 {
   color: black;
@@ -14,7 +16,17 @@ body {
 }
 img {
   border-radius: 50%;
+  border-top: 100px;
+  height: 400px;
+  width: 400px;
+  float: left;
+  padding: 10px;
+  background-color: rgb(226, 9, 81);
 }
+.Image.container {
+  height: 400px;
+  position: relative;
+  }
 #habilidadehobbies {
  /*  border: 1px solid green; */
   display: block;
@@ -26,12 +38,30 @@ img {
   /* border: 1px solid blue; */
   /* display: inline-block; */
   float: left;
+  
 }
 #Hobbies {
   /* border: 1px solid blue; */
   /* display: inline-block; */
   float: right;
+ 
 }
 #final {
   clear: both;
 }
+div {
+  border: solid green;
+}
+.Descricao {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: center;
+  right: 30px;
+}
+.curiosidade {
+ position: center;
+ color: rgb(235, 8, 46);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.habilidades [
+ 
+]
