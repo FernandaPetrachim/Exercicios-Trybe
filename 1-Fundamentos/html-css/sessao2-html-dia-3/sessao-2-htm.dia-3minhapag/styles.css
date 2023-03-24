@@ -1,0 +1,37 @@
+h1 {
+  color: palevioletred;
+  font-size: 2em;
+}
+h3 {
+  color: black;
+  font: size 100px;
+}
+body {
+  background-color: blanchedalmond;
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 auto;
+}
+img {
+  border-radius: 50%;
+}
+#habilidadehobbies {
+ /*  border: 1px solid green; */
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  overflow: hidden;
+}
+#Habilidades {
+  /* border: 1px solid blue; */
+  /* display: inline-block; */
+  float: left;
+}
+#Hobbies {
+  /* border: 1px solid blue; */
+  /* display: inline-block; */
+  float: right;
+}
+#final {
+  clear: both;
+}
