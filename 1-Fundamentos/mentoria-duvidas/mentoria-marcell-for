@@ -1,0 +1,17 @@
+let numeros = [3, 5, 8, 9, 6, 2];
+let soma = [];
+for(let numero of numeros){
+    console.log(numero);
+soma.push(numero + 1);
+}
+console.log(soma);
+
+let nome = 'Fernanda';
+let soma2 = [];
+for(let letra of nome){
+    console.log(letra);
+soma2.push(letra + 'p');
+}
+console.log(soma2);
+console.log(soma2.join('', ','))
+console.log('numbers'.length)
