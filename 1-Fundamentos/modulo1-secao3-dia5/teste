@@ -1,0 +1,5 @@
+const girafa = true;
+const elefante = true;
+const macaco = false;
+console.log(girafa && elefante);
+console.log(macaco && girafa);

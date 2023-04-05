@@ -1,3 +1,4 @@
-const numeroAleatorio = ()  =>  Math.random();
-  console.log(numeroAleatorio());
-  function teste(array) { 
+
+  const numeroAleatorio = () => Math.random()
+
+  console.log(numeroAleatorio())
