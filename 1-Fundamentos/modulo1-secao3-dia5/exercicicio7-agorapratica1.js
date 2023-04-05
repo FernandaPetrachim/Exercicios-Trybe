@@ -1,4 +1,4 @@
- const nomeCompleto = nome =>`Olá ${nome}`; 
+const nomeCompleto = (nome, sobrenome) =>`Olá ${nome} ${sobrenome}`
   
   let nome = 'Ivan';
   let sobrenome = 'Pires';
