@@ -3,3 +3,5 @@ const elefante = true;
 const macaco = false;
 console.log(girafa && elefante);
 console.log(macaco && girafa);
+
+const compareTrue = (animais) => {girafa && elefante};
