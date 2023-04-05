@@ -16,4 +16,11 @@ console.log(status); // logado
 ligarDesligar();
 console.log(status); // deslogado
 
-console.log('A Fernanda está ' + status + ' o carro!'); // O usuário está deslogado no sistema TrybeBank
+console.log('O carro de Fernanda está ' + status + ' na garagem!'); // O usuário está deslogado no sistema TrybeBank
+
+
+//const ligarDesligar =  (funcionando) =>{
+   // funcionando = funcionando === `desligado` ? `ligado` : `desligado` ;
+     //console.log(`O morto está ${funcionando}`);
+     //return funcionando;
+    //}
