@@ -1,0 +1,78 @@
+const { event } = require("cypress/types/jquery");
+
+const createDaysOfTheWeek = () => {
+  const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+  const weekDaysList = document.querySelector('.week-days');
+
+  for (let index = 0; index < weekDays.length; index += 1) {
+    const days = weekDays[index];
+    const dayListItem = document.createElement('li');
+    dayListItem.innerHTML = days;
+
+    weekDaysList.appendChild(dayListItem);
+  };
+}
+
+createDaysOfTheWeek();
+
+const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+document.getElementById('weekDays');
+// Escreva seu código abaixo.
+//exercicio1
+
+const calendario = () => {
+  decemberDaysList.forEach(numeros => {
+    const lista = document.createElement('li');
+    lista.classList = `day ${feriado(numeros)} ${sexta(numeros)}`;
+    lista.innerText = numeros;
+    document.querySelector('#days').appendChild(lista);
+  })
+}
+const feriado = (vacaciones) => {
+  let holiday = [24, 25, 31];
+  return holiday.includes(vacaciones) ? 'holiday' : '';
+}
+const sexta = (sextou) => {
+  let friday = [4, 11, 18, 25];
+  return friday.includes(sextou) ? 'friday' : '';
+}
+calendario();
+
+//exercicio2
+
+let botao1 = false;
+const botao = () => {
+  document.querySelector('#btn-holiday').addEventListener('click', (evento) => {
+    const boton = Array.from(document.querySelectorAll('.holiday'));
+    boton.forEach(clicar => clicar.setAttribute('style', botao1 ? 'background-color: rgb(238,238,238)' : 'background-color: blue'));
+    botao1 = !botao1;
+  })
+}
+botao();
+
+//exercicio3
+//Exercício 3 – Implemente uma função que modifica o texto exibido nos dias que são sextas-feiras
+//Adicione ao botão "Sexta-feira" um evento de "click" e modifique o texto a ser exibido nos dias em que são sextas-feiras.
+
+//Importante: Esse botão também deve ter a lógica inversa. Ao ser clicado novamente, ele retorna à configuração inicial e exibe os dias.
+
+//O que será testado:
+//Ao clicar no botão "Sexta-feira", o texto dos dias em que são sextas-feiras deve mudar. Esse texto pode ser o que você escolher, mas deve ser diferente do dia do mês.
+//Ao clicar novamente no botão "Sexta-feira", o texto retorna ao normal.
+
+let botaoSexta = false;
+let sextou = [];
+const clicarBotao = () => {
+  document.querySelector('#btn-friday').addEventListener('click', (event) => {
+    const alteraNome = Array.from(document.querySelectorAll('.friday'));
+    alteraNome.forEach((valor, index) => {
+      if (!botaoSexta) {
+        sextou[index] = valor.innerText;
+      }
+      valor.style.background = botaoSexta ? "rgb(238,238,238)" : '';
+      valor.innerText = botaoSexta ? sextou[index] : 'SEXTOUU';
+    })
+    botaoSexta = !botaoSexta;
+  })
+}
+clicarBotao();
