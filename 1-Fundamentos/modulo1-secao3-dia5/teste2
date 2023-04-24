@@ -1,0 +1,36 @@
+
+
+function compareTrue(parametro1, parametro2) {
+    if(parametro1 === false && parametro2 === true) {
+    return false}
+    if(parametro1 === false && parametro2 === false) {
+      return false}
+    if(parametro1 === true && parametro2 === true) {
+    return true}
+}
+
+    console.log(compareTrue(false, true));
+    console.log(compareTrue(false, false));
+    console.log(compareTrue(true, true));
+
+   
+
+    
+    function compareTrue(parametro1, parametro2) {
+        if (parametro1 === elefante && parametro2 === macaco) {
+          return false
+        }
+        if (parametro1 === macaco && parametro2 === girafa) {
+          return false
+        }
+        if (parametro1 === elefante && parametro2 === girafa) {
+          return true
+        }
+      }
+      console.log(compareTrue(false, true));
+      console.log(compareTrue(false, false));
+      console.log(compareTrue(true, true));
+
+
+
+
