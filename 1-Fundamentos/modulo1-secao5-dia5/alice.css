@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .container {
+    display: flex;
+    font-size: 35px;
+  }
+  
+  p {
+    padding: 20px;
+    font-size: 40px;
+  }
+  
+  
+  /* Este é o primeiro breakpoint*/
+  
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: rgb(186, 193, 230);
+      font-family: sans-serif;
+    }
+    .container {
+      flex-direction: column;
+    }
+  
+    p {
+      padding: 0 5px;
+      line-height: 1.5em;
+    }
+  }
+  
+  /* Este é o segundo breakpoint */
+  
+  @media screen and (min-width: 600px) {
+    body {
+      background-color: rgb(34, 34, 213);
+    }
+  
+    .container {
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* Este é o terceiro breakpoint */
+  
+  @media screen and (min-width: 1000px) {
+    body {
+      background-color: rgb(149, 179, 226);
+    }
+    .container {
+      flex-wrap: nowrap;
+    }
+  }
