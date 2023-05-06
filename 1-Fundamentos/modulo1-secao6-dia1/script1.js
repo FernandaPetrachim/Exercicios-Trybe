@@ -95,6 +95,11 @@ const clients = [
     },
 ];
 
+/* Questão 1-A função findPersonByName() recebe um nome por parâmetro e retorna a string: 
+'Destinatário: Ana Santos. Endereço: Rua dos Girassóis, 1011, Barra, Salvador - BA. CEP: 34567-890 '.
+Caso a função findPersonByName() não encontre pessoas na lista de clientes, lance 
+uma exceção com a mensagem 'Pessoa não encontrada, tente novamente'. */
+
 const findPersonByName = (name) => {
     let client = '';
     try {
@@ -103,7 +108,7 @@ const findPersonByName = (name) => {
                 client = clients[index];
             }
         } if (!client) {
-            throw new Error('Erro1213123')
+            throw new Error('Pessoa não encontrada, tente novamente')
         }
         return client;
     } catch (e) {
@@ -111,26 +116,54 @@ const findPersonByName = (name) => {
     }
 
 };
-console.log(findPersonByName('Rafael Ferreira'));
+console.log(findPersonByName('Ana Santos'));
 
-/*  console.log(clients[1].name);
- console.log(clients[2].address.street);
- console.log(clients[3].address.state); */
-
-
-
+/* A função findPersonByPosition() recebe uma posição (do array) por parâmetro e retorna uma string com o nome e o e-mail da pessoa. 
+Cliente: João da Silva. email: joao.silva@gmail.com.
+Caso a função findPersonByPosition() não localize uma pessoa por posição, lance uma exceção com a mensagem 
+'Posição inválida, tente novamente'. */
 
 const findPersonByPosition = (position) => {
-    // seu código aqui
-};
-
-const findPeopleByState = (state) => {
-    // seu código aqui
-};
-
+    try {
+      const pessoa = clients[position];
+      if (!pessoa) {
+        throw new Error('Posição inválida, tente novamente');
+      }
+      return `Cliente: ${pessoa.name}. email: ${pessoa.email}`;
+    } catch (error) {
+      return error.message;
+    }
+  };
+  
+  console.log(findPersonByPosition(5)); 
+  console.log(findPersonByPosition(10));
 
 /* 
-  A função findPersonByName() recebe um nome por parâmetro e retorna a string: 'Destinatário: Ana Santos.
-   Endereço: Rua dos Girassóis, 1011, Barra, Salvador - BA. CEP: 34567-890 '.
-Caso a função findPersonByName() não encontre pessoas na lista de clientes, lance uma exceção com a mensagem 
-'Pessoa não encontrada, tente novamente'. */
+  A função findPeopleByState recebe um estado por parâmetro e retorna um array contendo o nome das pessoas 
+  que moram naquele estado.
+  Caso a função findPeopleByState localize nenhuma pessoa no estado, lance uma exceção com a mensagem 
+  'Ops, nenhuma pessoa mora nesse estado, tente outro' */
+
+
+const findPeopleByState = (state) => {
+   const result = clients.filter(estado => estado.address.state === state).map(nome => nome.name);
+  /*  const mapaNome = result.map(nome => nome.name); */
+   if (result.length === 0) {
+    return 'Ops, nenhuma pessoa mora nesse estado, tente outro';
+   } 
+   return result;
+   }
+
+console.log(findPeopleByState('RJ'));
+
+
+
+
+
+
+
+
+ 
+
+
+
