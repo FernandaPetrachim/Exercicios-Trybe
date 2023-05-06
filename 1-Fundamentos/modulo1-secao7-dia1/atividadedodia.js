@@ -4,13 +4,13 @@ const employeeGenerator = (fullName) => {
     return { fullName, email: `${email}@trybe.com` };
   };
   
-  const newEmployees = (callback) => {
-    const employees = {
-      id1: callback('Pedro Guerra'),
-      id2: callback('Luiza Drumond'),
-      id3: callback('Carla Paiva'),
+  const newEmployees = (nomeCompleto) => {
+    const nome = {
+      id1: nomeCompleto('Paulo Ferreira'),
+      id2: nomeCompleto('Marina Luiza'),
+      id3: nomeCompleto('Jõao Paulo'),
     };
-    return employees;
+    return nome;
   };
   
   console.log(newEmployees(employeeGenerator));
