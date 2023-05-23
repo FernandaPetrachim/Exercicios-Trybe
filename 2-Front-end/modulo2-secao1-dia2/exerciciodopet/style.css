@@ -1,0 +1,30 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #edf0f7;
+  }
+  
+  h1 {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+   .botao {
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    background-color: #333333;
+    border-radius: 5px;
+    color: #bab1e9;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+  #imagem {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-inline: auto;
+  }
+  
