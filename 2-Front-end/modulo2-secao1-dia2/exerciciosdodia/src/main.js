@@ -5,8 +5,8 @@ const button = document.querySelector('#button');
 
 const ACCESS_TOKEN = '3684953948446868';
 const BASE_URL = `https://www.superheroapi.com/api.php/${ACCESS_TOKEN}`;
-const MAX_HEROES = 1000;
-
+const MAX_HEROES = 1000;   
+//qundo não vai alterar ai faz em letra maiuscula
 const randomId = () => Math.floor(Math.random() * MAX_HEROES);
 
 button.addEventListener('click', (event) => {
